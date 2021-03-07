@@ -1,0 +1,27 @@
+.bank-processing-area {
+  width: 100%;
+  display: flex;
+  padding: 10px 0px;
+  > div {
+    flex: 1 1;
+    display: flex;
+    padding: 0 20px;
+    &.wait-count {
+      font-size: 14px;
+    }
+    button {
+      border-radius: 3px;
+      width: 80px;
+      height: 30px;
+      border: 0px;
+      background: #0385d7;
+      color: #fff;
+    }
+    &:nth-of-type(1) {
+      justify-content: flex-start;
+    }
+    &:nth-of-type(2) {
+      justify-content: flex-end;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.bank-counters {
+  width: 100%;
+}
+
+.bank-row {
+  display: flex;
+  padding: 8px 0px;
+  border-bottom: 1px solid #dedede;
+  &:nth-child(odd) {
+    background: #f3f3f3;
+  }
+  &.title {
+    background: #ff9800;
+    color: #fff;
+    font-weight: 500;
+  }
+  span {
+    width: 33.3%;
+    text-align: center;
+    word-break: break-all;
+    text-align: left;
+    padding: 0px 20px;
+  }
+}
