@@ -5,7 +5,7 @@ const BankCounter = ({ bankInfo }) => (
   <Fragment>
     <div className="bank-counters">
       <div className="bank-row title">
-        <span>name</span>
+        <span>counter</span>
         <span>processing</span>
         <span>processed</span>
       </div>

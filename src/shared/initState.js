@@ -1,5 +1,5 @@
 const initState = {
-  initCounterList: ["tony", "jerry", "elenore", "natasha"],
+  initCounterList: ["Tony", "Jerry", "Elenore", "Natasha"],
   initWaitInfo: {
     lastNumber: 1,
     list: [],

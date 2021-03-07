@@ -15,6 +15,7 @@ const addBankCounter = (list) => {
 const useBankCounter = ({ initCounterList, initWaitInfo }) => {
   const [waitInfo, setWaitInfo] = useState(initWaitInfo);
   const [bankInfo, setBankInfo] = useState(addBankCounter(initCounterList));
+
   const addWaitingList = useCallback(() => {
     setWaitInfo((prev) => {
       const { list, lastNumber } = prev;
@@ -31,6 +32,7 @@ const useBankCounter = ({ initCounterList, initWaitInfo }) => {
   useEffect(() => {
     const newBankInfo = bankInfo;
     const newWaitList = waitInfo.list;
+
     if (waitInfo.list.length > 0) {
       Object.keys(newBankInfo)
         .filter((name) => newBankInfo[name].processing === null)
@@ -49,6 +51,7 @@ const useBankCounter = ({ initCounterList, initWaitInfo }) => {
           if (newWaitList.length === 0) return true;
           return false;
         });
+
       setBankInfo(() => newBankInfo);
       setWaitInfo((prev) => ({ ...prev, list: newWaitList }));
     }
